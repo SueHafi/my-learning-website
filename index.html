@@ -20,240 +20,286 @@
     <title>My Learning</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
-      <a class="navbar-brand" href="#">
-        <img class="logo" src="/images/logo.png" alt="MyLearning logo" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#">Dashboard</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link px-3" href="#"
-              >Course catalog<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#">My Badges</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#">Events</a>
-          </li>
-        </ul>
-        <a class="nav-link px-3" href="#">Log in</a>
-      </div>
-    </nav>
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="heading"><span class="heading-prefix">Welcome to</span><span>MyLearning</span></h1>
-            <form>
-              <div class="form-group">
-                <label class="username-text" for="formGroupExampleInput">Username</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="formGroupExampleInput"
-                  placeholder=""
-                />
-              </div>
-              <div class="form-group">
-                <label class="username-text" for="formGroupExampleInput2">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="formGroupExampleInput2"
-                  placeholder=""
-                />
-              </div>
-            </form>
-            <button>
-              <svg
-                class="right-arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 12 12"
+      <nav class="navbar navbar-expand-lg navbar-light p-3">
+        <a class="navbar-brand" href="/">
+          <img class="logo" src="/images/logo.png" alt="MyLearning logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#"
+                >Course catalog<span class="sr-only">(current)</span></a
               >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="#000"
-                    fill-rule="nonzero"
-                    d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
-                  ></path>
-                </g></svg
-              >Log in
-            </button>
-            <div>
-              <a href="#">Contact us</a>
-              <a href="#">Lost password?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">My Badges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Events</a>
+            </li>
+          </ul>
+          <a class="nav-link px-3" href="#">Log in</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mylearning-section">
+      <div class="row m-0 p-0">
+        <div class="col-md m-0 p-0 order-md-1">
+          <img
+            class="mylearning-banner"
+            src="/images/intro-banner-500.jpg"
+            srcset="
+              /images/intro-banner-500.jpg    500w,
+              /images/intro-banner-500.webp   500w,
+              /images/intro-banner-800.jpg    800w,
+              /images/intro-banner-800.webp   800w,
+              /images/intro-banner-1200.jpg  1200w,
+              /images/intro-banner-1200.webp 1200w
+            "
+            sizes="(min-width: 768px) 50vw,
+                  100vw
+            "
+            alt="mylearning banner"
+          />
+        </div>
+        <div class="col-md m-0 p-5">
+          <div class="container">
+            <div class="content">
+              <h1 class="heading">
+                <span class="heading-prefix">Welcome to</span
+                ><span>MyLearning</span>
+              </h1>
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <label class="label" for="username-input">Username</label>
+                  <input
+                    type="text"
+                    class="form-control input-box"
+                    id="username-input"
+                    name="username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="label" for="password-input">Password</label>
+                  <input
+                    type="password"
+                    class="form-control input-box"
+                    id="password-input"
+                  />
+                </div>
+                <button class="btn btn-primary w-100 border-0">
+                  <svg
+                    class="right-arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 12 12"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <path
+                        fill="#000"
+                        fill-rule="nonzero"
+                        d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
+                      ></path>
+                    </g>
+                  </svg>
+                  Log in
+                </button>
+              </form>
+
+              <div class="d-flex justify-content-between">
+                <a href="#">Contact us</a>
+                <a href="#">Lost password?</a>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <img
-              class="mylearning-banner"
-              src="/images/intro-banner.jpg"
-              alt="mylearning banner"
-            />
-          </div>
         </div>
       </div>
-    </header>
-    <section class="course-catalogue">
-      <h2>Course catalogue</h2>
-      <div class="d-flex p-2 bd-highlight">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Product and technical</h5>
-            <img
-              src="/icons/product.png"
-              class="card-img-top"
-              alt="lightbulb"
-            />
-            <a href="#" class="btn btn-primary"
-              ><svg
-                class="right-arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 12 12"
+    </section>
+
+    <section class="course-catalogue p-5">
+      <div class="container">
+        <h2 class="course-catalogue-heading">Course catalogue</h2>
+        <div
+          class="d-flex flex-wrap mt-4 justify-content-center bd-highlight cards"
+        >
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Product and technical</h3>
+              <img
+                src="/icons/product.png"
+                class="card-img-top card-img"
+                alt="lightbulb"
+              />
+              <a href="#" class="btn btn-outline-dark course-card-btn"
+                ><svg
+                  class="right-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#000"
+                      fill-rule="nonzero"
+                      d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
+                    ></path>
+                  </g></svg
+                >View courses</a
               >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="#000"
-                    fill-rule="nonzero"
-                    d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
-                  ></path>
-                </g></svg
-              >View courses</a
-            >
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Business development</h5>
-            <img
-              src="/icons/business-development.png"
-              class="card-img-top"
-              alt="lightbulb"
-            />
-            <a href="#" class="btn btn-primary"
-              ><svg
-                class="right-arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 12 12"
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Business development</h3>
+              <img
+                src="/icons/business-development.png"
+                class="card-img-top card-img"
+                alt="lightbulb"
+              />
+              <a href="#" class="btn btn-outline-dark course-card-btn"
+                ><svg
+                  class="right-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#000"
+                      fill-rule="nonzero"
+                      d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
+                    ></path>
+                  </g>
+                </svg>
+                View courses</a
               >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="#000"
-                    fill-rule="nonzero"
-                    d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
-                  ></path>
-                </g>
-              </svg>
-              View courses</a
-            >
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Optics and manufacturing</h5>
-            <img src="/icons/optics.png" class="card-img-top" alt="lightbulb" />
-            <a href="#" class="btn btn-primary">
-              <svg
-                class="right-arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 12 12"
+          <div class="card card-featured">
+            <div class="card-body">
+              <h3 class="card-title">Optics and manufacturing</h3>
+              <img
+                src="/icons/optics.png"
+                class="card-img-top card-img"
+                alt="lightbulb"
+              />
+              <a href="#" class="btn btn-outline-dark course-card-btn">
+                <svg
+                  class="right-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#000"
+                      fill-rule="nonzero"
+                      d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
+                    ></path>
+                  </g></svg
+                >View courses</a
               >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="#000"
-                    fill-rule="nonzero"
-                    d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
-                  ></path>
-                </g></svg
-              >View courses</a
-            >
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">cpd</h5>
-            <img src="/icons/cpd.png" class="card-img-top" alt="lightbulb" />
-            <a href="#" class="btn btn-primary">
-              <svg
-                class="right-arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 12 12"
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">cpd</h3>
+              <img
+                src="/icons/cpd.png"
+                class="card-img-top card-img"
+                alt="lightbulb"
+              />
+              <a href="#" class="btn btn-outline-dark course-card-btn">
+                <svg
+                  class="right-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#000"
+                      fill-rule="nonzero"
+                      d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
+                    ></path>
+                  </g></svg
+                >View courses</a
               >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="#000"
-                    fill-rule="nonzero"
-                    d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
-                  ></path>
-                </g></svg
-              >View courses</a
-            >
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Business management</h5>
-            <img
-              src="/icons/business-management.png"
-              class="card-img-top"
-              alt="lightbulb"
-            />
-            <a href="#" class="btn btn-primary"
-              ><svg
-                class="right-arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 12 12"
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Business management</h3>
+              <img
+                src="/icons/business-management.png"
+                class="card-img-top card-img"
+                alt="lightbulb"
+              />
+              <a href="#" class="btn btn-outline-dark course-card-btn"
+                ><svg
+                  class="right-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#000"
+                      fill-rule="nonzero"
+                      d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
+                    ></path>
+                  </g>
+                </svg>
+                View courses</a
               >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="#000"
-                    fill-rule="nonzero"
-                    d="M11.743 6.297c.07-.157.07-.367 0-.594-.07-.07-.07-.14-.14-.21L6.506.398C6.226.1 5.791.1 5.494.397c-.297.297-.297.733 0 1.012L9.35 5.267H.903c-.436 0-.715.297-.715.733s.279.733.715.733h8.448l-3.857 3.84a.707.707 0 000 1.03c.14.14.366.21.506.21s.367-.07.506-.21l5.097-5.097c.07-.07.14-.14.14-.21z"
-                  ></path>
-                </g>
-              </svg>
-              View courses</a
-            >
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <img src="/images/videoplaceholder.png" alt="" />
-      <h2>About nikon lenswear uk</h2>
-      <p>
-        A pioneer in ophthalmic lens technology, Nikon Lenswear supports premium
-        independent opticians across the UK to grow and differentiate their
-        business.
-      </p>
+
+    <section class="about-us-section p-5">
+      <div class="container-sm about-us-container">
+        <img
+          src="/images/videoplaceholder.png"
+          alt=""
+          class="about-us-img w-100"
+        />
+        <h2 class="about-us-heading mt-4">About nikon lenswear UK</h2>
+        <p>
+          A pioneer in ophthalmic lens technology, Nikon Lenswear supports
+          premium independent opticians across the UK to grow and differentiate
+          their business.
+        </p>
+      </div>
     </section>
-    <footer>
-      <p>&copy; 2023 Nikon Optical Ltd, All rights reserved.</p>
-      <button>contact us</button>
-      <p>
-        Nikon Optical Ltd 3 Tanners Drive Blakelands Milton Keynes, Bucks
-        MK145BU United-Kingdom
-      </p>
-      <a href="#">Data retention summary policies</a
-      ><button>Cookies settings</button>
+
+    <footer class="footer p-5">
+      <div class="container-sm footer-container">
+        <p>&copy; 2023 Nikon Optical Ltd, All rights reserved.</p>
+        <a class="btn btn-primary" href="tel:#">contact us</a>
+        <address>
+          Nikon Optical Ltd<br />
+          3 Tanners Drive<br />
+          Blakelands Milton Keynes, Bucks<br />
+          MK145BU United-Kingdom
+        </address>
+        <p><a href="#">Data retention summary policies</a></p>
+        <button class="btn btn-outline-info">Cookies settings</button>
+      </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
